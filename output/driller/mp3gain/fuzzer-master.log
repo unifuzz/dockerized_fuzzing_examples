@@ -1,0 +1,54 @@
+[0;36mafl-fuzz [1;97m2.52b[0m by <lcamtuf@google.com>
+[1;92m[+] [0mLooks like we're not running on a tty, so I'll be a bit less verbose.[0m
+[1;92m[+] [0mYou have 4 CPU cores and 1 runnable tasks (utilization: 25%).[0m
+[1;92m[+] [0mTry parallel jobs - see docs/parallel_fuzzing.txt.[0m
+[1;94m[*] [0mChecking CPU core loadout...[0m
+[1;92m[+] [0mFound a free CPU core, binding to #0.[0m
+[1;94m[*] [0mChecking core_pattern...[0m
+[1;94m[*] [0mChecking CPU scaling governor...[0m
+[1;94m[*] [0mSetting up output directories...[0m
+[1;94m[*] [0mScanning 'output/driller/mp3gain/input'...[0m
+[1;92m[+] [0mNo auto-generated dictionary tokens to reuse.[0m
+[1;94m[*] [0mCreating hard links for all input files...[0m
+[1;94m[*] [0mLoading extra dictionary from 'output/driller/mp3gain/mp3gain.dict' (level 0)...[0m
+[1;92m[+] [0mLoaded 711 extra tokens, size range 1 B to 117 B.[0m
+[1;93m[!] [1;97mWARNING: [0mSome tokens are relatively large (117 B) - consider trimming.[0m
+[1;93m[!] [1;97mWARNING: [0mMore than 200 tokens - will use them probabilistically.[0m
+[1;94m[*] [0mValidating target binary...[0m
+[1;94m[*] [0mAttempting dry run with 'id:000000,orig:seed-0'...[0m
+[1;94m[*] [0mSpinning up the fork server...[0m
+[1;92m[+] [0mAll right - fork server is up.[0m
+[1;90m    len = 8748, map size = 696, exec speed = 50176 us
+[0m[1;94m[*] [0mAttempting dry run with 'id:000001,orig:seed-1'...[0m
+[1;90m    len = 17889, map size = 398, exec speed = 17535 us
+[0m[1;94m[*] [0mAttempting dry run with 'id:000002,orig:seed-2'...[0m
+[1;90m    len = 3786, map size = 689, exec speed = 25124 us
+[0m[1;94m[*] [0mAttempting dry run with 'id:000003,orig:seed-3'...[0m
+[1;90m    len = 17429, map size = 484, exec speed = 36854 us
+[0m[1;94m[*] [0mAttempting dry run with 'id:000004,orig:seed-4'...[0m
+[1;90m    len = 3704, map size = 476, exec speed = 24338 us
+[0m[1;94m[*] [0mAttempting dry run with 'id:000005,orig:seed-5'...[0m
+[1;90m    len = 17890, map size = 691, exec speed = 82503 us
+[0m[1;94m[*] [0mAttempting dry run with 'id:000006,orig:seed-6'...[0m
+[1;90m    len = 17920, map size = 692, exec speed = 31030 us
+[0m[1;94m[*] [0mAttempting dry run with 'id:000007,orig:seed-7'...[0m
+[1;90m    len = 8747, map size = 690, exec speed = 41498 us
+[0m[1;94m[*] [0mAttempting dry run with 'id:000008,orig:seed-8'...[0m
+[1;90m    len = 5256, map size = 692, exec speed = 34648 us
+[0m[1;94m[*] [0mAttempting dry run with 'id:000009,orig:seed-9'...[0m
+[1;90m    len = 17907, map size = 690, exec speed = 89594 us
+[0m[1;92m[+] [0mAll test cases processed.[0m
+
+[1;93m[!] [1;97mWARNING: [0mSome test cases are big (17.5 kB) - see docs/perf_tips.txt.[0m
+[1;92m[+] [0mHere are some useful stats:
+
+[1;90m    Test case count : [0m8 favored, 0 variable, 10 total
+[1;90m       Bitmap range : [0m398 to 696 bits (average: 619.80 bits)
+[1;90m        Exec timing : [0m17.5k to 89.6k us (average: 43.3k us)
+[0m
+[1;94m[*] [0mNo -t option specified, so I'll use exec timeout of 140 ms.[0m
+[1;92m[+] [0mAll set and ready to roll![0m
+[1;94m[*] [0mEntering queue cycle 1.[0m
+[1;94m[*] [0mFuzzing test case #1 (10 total, 0 uniq crashes found)...[0m
+[1;94m[*] [0mFuzzing test case #2 (104 total, 1 uniq crashes found)...[0m
+[1;94m[*] [0mFuzzing test case #4 (175 total, 1 uniq crashes found)...[0m
