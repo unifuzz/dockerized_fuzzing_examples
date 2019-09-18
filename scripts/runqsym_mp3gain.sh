@@ -1,8 +1,10 @@
 #!/bin/bash
-PROG="/work/build/mp3gain/afl/aflasan/mp3gain"
-PROG_NORMAL="/work/build/mp3gain/normal/mp3gain"
-SEED="/work/seed/mp3"
-OUTPUT="/work/output/qsym"
+
+
+PROG="./mp3gain_asan"
+PROG_NORMAL="./mp3gain_normal"
+SEED="seed_mp3"
+OUTPUT="output/qsym"
 CMD="@@"
 
 /afl/afl-fuzz -t 1000+ -m none -M afl-master -i $SEED -o $OUTPUT -- $PROG $CMD &
