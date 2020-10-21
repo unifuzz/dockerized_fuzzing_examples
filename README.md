@@ -8,7 +8,7 @@ If you are looking for usable fuzzers: [dockerized_fuzzing](https://github.com/u
 
 ## Folder structure
 
-- build: the compiled binary, please also take a look at [unibench docker image](https://hub.docker.com/r/unifuzz/unibench/tags)
+- build: the compiled binary, please also take a look at [unibench_build](https://github.com/unifuzz/unibench_build)
 - code: source code of programs under testing, please also take a look at [unibench](https://github.com/unifuzz/unibench)
 - output: what you will get after running the fuzzing
 - scripts: just for running qsym
